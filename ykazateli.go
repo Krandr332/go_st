@@ -7,3 +7,4 @@ func main(){
 	b:= &a
 	*b +=1
 	fmt.Println(a,*b)}
+	
