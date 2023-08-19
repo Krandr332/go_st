@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Pixel_font';
+    src: url('../fonts/Chava-Regular.otf') format('otf'),
+         url('../fonts/Chava-Regular.otf') format('otf');
+    /* Добавьте другие форматы шрифта, если это необходимо */
+    font-weight: normal;
+    font-style: normal;
+}
