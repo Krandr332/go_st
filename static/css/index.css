@@ -1,39 +1,40 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("../img/Фон.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.center-container {
-    position: relative;
-}
-
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: 'Pixel_font', sans-serif;
-
-}
-
-/* Добавьте медиазапросы для адаптивности */
-@media (max-width: 768px) {
-    .centered-text {
-        font-size: 24px;
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("../img/Фон.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-}
 
-@media (max-width: 480px) {
-    .centered-text {
-        font-size: 18px;
+    .center-container {
+        position: relative;
     }
-}
+
+    .centered-text {
+        font-family: 'Pixel_font', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 100px;
+
+    }
+
+    /* Добавьте медиазапросы для адаптивности */
+    @media (max-width: 768px) {
+        .centered-text {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .centered-text {
+            font-size: 18px;
+        }
+    }

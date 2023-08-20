@@ -1,0 +1,70 @@
+body {
+    font-family: 'Pixel_font', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/Фон.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #5F5F5F;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    margin: 0;
+    padding: 20px 0; /* Измените padding для равномерных отступов сверху и снизу */
+    border-bottom: 1px solid white;
+    font-size: 24px;
+    text-align: center; /* Выравнивание по центру */
+}
+
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    font-family: 'Pixel_font', sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    font-size: 16px; /* Добавьте размер шрифта */
+    text-align: center;
+}
+
+.login-box button {
+    font-family: 'Pixel_font', sans-serif;
+    background-color: #5F5F5F;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #444444;
+}
+

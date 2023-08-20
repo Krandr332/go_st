@@ -1,0 +1,69 @@
+body {
+    font-family: 'Pixel_font', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/Фон.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-box {
+    background-color: #5F5F5F;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+.registration-box h2 {
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.registration-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registration-box input[type="text"],
+.registration-box input[type="password"] {
+    font-family: 'Pixel_font', sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.registration-box button {
+    font-family: 'Pixel_font', sans-serif;
+    background-color: #5F5F5F;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-box button:hover {
+    background-color: #444444;
+}

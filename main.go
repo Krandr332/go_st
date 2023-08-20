@@ -12,5 +12,9 @@ func main() {
     http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
 	http.HandleFunc("/", indexPage)
+	http.HandleFunc("/login", loginPage)
+	http.HandleFunc("/register",registerPage)
+	http.HandleFunc("/home",homePage)
+
 	http.ListenAndServe(":8080", nil)
 }

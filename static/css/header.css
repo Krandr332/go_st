@@ -1,0 +1,54 @@
+/* static/css/header.css */
+
+.header {
+    color: white;
+    font-family: 'Pixel_font', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.nav h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Увеличьте интервал между словами */
+.nav h2::after {
+    content: "\00a0\00a0"; /* Добавьте неразрывные пробелы между словами */
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+.name {
+    margin-left: 600px; /* Перемещаем элемент "Name" вправо */
+    font-size: 18px;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 768px) {
+    .nav h2 {
+        font-size: 14px;
+    }
+}
