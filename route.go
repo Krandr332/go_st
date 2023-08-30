@@ -34,10 +34,10 @@ func registerPage(w http.ResponseWriter, r *http.Request) {
 		password1 :=r.FormValue("password1")
 		password2 :=r.FormValue("password2")
 		if password1 == password2{
-			CreateUserAccaunt(username,password1)
+			err=CreateUserAccaunt(username,"nil",password1)
 			if err !=nil{
 				log.Println(err)
-				http.Error(w,"qq",http.StatusInternalServerError)
+				http.Error(w,"ОШИБКА БЛЯ",http.StatusInternalServerError)
 			}
 			
 		}
