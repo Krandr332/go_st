@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"time"
 
 	_ "github.com/lib/pq"
 )
@@ -57,3 +56,12 @@ func main() {
 
 	fmt.Printf("User registered with ID: %d\n", userID)
 }
+_______________
+// pgconnect := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+		// db,err :=sql.Open("postgres",pgconnect)
+		// CheckError(err)
+		// defer db.Close()
+
+		// query :="INSERT INTO public.user(username,password) VALUES ($1,$2)"
+		// _, err = db.Exec(query, username, password)
+		// CheckError(err)
