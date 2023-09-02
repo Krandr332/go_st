@@ -1,3 +1,5 @@
+	// structurs.go
+
 package main
 
 import (
